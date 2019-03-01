@@ -12,6 +12,6 @@
 
 <section class="status">
     <span class="line"></span>
-    <p class="description"></p>
-    <p class="current"></p>
+    <p class="description">Web developer, musician, dog-lover from Los Angeles, CA.<br><br>
+    Currently working at <a href="https://yaybrigade.com">Yay Brigade</a>.</p>
 </section>

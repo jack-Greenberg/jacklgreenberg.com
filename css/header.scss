@@ -43,3 +43,26 @@
         color: $purple;
     }
 }
+
+.status {
+    width: 90%;
+    margin: 2rem auto;
+    background-color: $purple;
+    padding: 1rem;
+
+    .line {
+        width: 3.5rem;
+        display: block;
+        margin-bottom: .4rem;
+        border-bottom: 3px solid $green;
+    }
+    .description {
+        font-size: 1em;
+        font-family: $mono;
+        color: $green;
+
+        a {
+            color: $green;
+        }
+    }
+}
