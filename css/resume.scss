@@ -1,0 +1,10 @@
+.resume {
+    @extend %section;
+
+    &__title {
+        @extend %section__title;
+    }
+    &__subtitle {
+        @extend %section__subtitle;
+    }
+}

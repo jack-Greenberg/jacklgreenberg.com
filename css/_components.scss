@@ -9,3 +9,25 @@ $dark-gray: #343434;
 // fonts
 $sans: 'Lato', sans-serif;
 $mono: 'Inconsolata', monospace;
+
+// styles
+%section {
+    background-color: $purple;
+    width: 90%;
+    margin: 0 auto 1rem;
+    padding: 1rem;
+    position: relative;
+}
+%section__title {
+    font-size: 2em;
+    font-family: $sans;
+    font-style: italic;
+    color: $green;
+}
+%section__subtitle {
+    font-size: 1em;
+    font-family: $mono;
+    font-weight: 400;
+    color: $green;
+    margin-top: .5em;
+}

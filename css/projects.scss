@@ -1,23 +1,11 @@
 .projects {
-    background-color: $purple;
-    width: 90%;
-    margin: 0 auto 1rem;
-    padding: 1rem;
-    position: relative;
+    @extend %section;
 
     &__title {
-        font-size: 2em;
-        font-family: $sans;
-        font-style: italic;
-        color: $green;
+        @extend %section__title;
     }
     &__subtitle {
-        font-size: 1em;
-        font-family: $mono;
-        font-weight: 400;
-        color: $green;
-    }
-    &__list {
+        @extend %section__subtitle;
     }
 }
 .project-item {
@@ -37,20 +25,5 @@
         font-family: $mono;
         color: $purple;
         margin: .25em 0;
-    }
-}
-.projects-expand {
-    width: 1.5em;
-    height: 1.5em;
-    position: absolute;
-    top: .5em;
-    right: .5em;
-
-    svg {
-        width: 100%;
-        height: 100%;
-        stroke: $green;
-        fill: none;
-        stroke-width: 2;
     }
 }
