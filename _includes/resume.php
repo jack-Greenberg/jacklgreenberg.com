@@ -9,8 +9,7 @@
         <!-- MOBILE (list view) -->
         <ul>
             <li class="work-item">
-                <time class="work-item__time">01/2019 — now <br>
-                (& 06 — 08/2018)</time>
+                <time class="work-item__time">01/2019 — now</time>
                 <h4 class="work-item__job">Yay Brigade</h4>
                 <p class="work-item__location">LA, CA</p>
                 <p class="work-item__job-title">Developer / Intern</p>
@@ -21,7 +20,7 @@
                 <p class="work-item__location">Berlin, DE</p>
                 <p class="work-item__job-title">Intern / Data Architect</p>
             </li>
-            <li><a href="">See more...</a></li>
+            <li class="work-item"><a href="">More...</a></li>
         </ul>
 
         <!-- DESKTOP (timeline) -->
@@ -30,31 +29,28 @@
     <div class="resume__school">
         <h3>School</h3>
         <ul>
-            <li class="school__item">
-                <time class="school__item__time">Aug 2019 —</time>
-                <h4 class="school__item__name">Olin College of Engineering</h4>
+            <li class="school-item">
+                <time class="school-item__time">Aug 2019 —</time>
+                <h4 class="school-item__name">Olin College of Engineering</h4>
             </li>
-            <li class="school__item">
-                <time class="school__item__time">2015 — 2018</time>
-                <h4 class="school__item__name">Oakwood School</h4>
+            <li class="school-item">
+                <time class="school-item__time">2015 — 2018</time>
+                <h4 class="school-item__name">Oakwood School</h4>
             </li>
         </ul>
     </div>
 
     <div class="resume__skills">
         <h3>Skills</h3>
-        <div class="skills__names">
-            <ul>
-                <li>HTML, (S)CSS</li>
-                <li>JS</li>
-                <li>Git</li>
-                <li>PHP</li>
-                <li>Webpack</li>
-                <li>React</li>
-                <li>Python</li>
-            </ul>
+
+        <div class="skills__chart">
+            <div class="chart__legend  js-chart__legend">
+
+            </div>
+            <div class="chart__graph  js-chart__graph">
+
+            </div>
         </div>
-        <div class="skills__graph  js-skills__graph"></div>
     </div>
 
     <div class="resume__other"></div>
