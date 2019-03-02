@@ -6,15 +6,13 @@
 
     <ul class="projects__list">
         <li class="project-item">
-            <h3 class="project-item__title">Built By Women</h3>
-            <p class="project-item__description">Coded and assisted in design for a project for the Beverly Willis Architecture Foundation, who will be drafting a map in 2020 of buildings architected by women in Los Angeles.</p>
-            <a class="project-item__link" href="https://builtbywomen.us">builtbywomen.us</a>
+            <h3 class="project-item__title"><a href="https://builtbywomen.us">Built By Women</a></h3>
+            <p class="project-item__description">Site development.</p>
         </li>
 
         <li class="project-item">
-            <h3 class="project-item__title">Passphrase Generator</h3>
-            <p class="project-item__description">A passphrase generator built in React with a clean and useable UI.</p>
-            <a class="project-item__link" href="https://tools.jacklgreenberg.com/passphrase">tools.jacklgreenberg.com /passphrase</a>
+            <h3 class="project-item__title"><a href="https://tools.jacklgreenberg.com/passphrase/">Passphrase Generator</a></h3>
+            <p class="project-item__description">Passphrase generator in React.</p>
         </li>
     </ul>
 </section>
