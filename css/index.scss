@@ -1,6 +1,14 @@
 @import 'reset.scss';
 @import 'header.scss';
+@import 'projects.scss';
 
 body {
     background-color: $green;
+}
+
+.line {
+    width: 3.5rem;
+    display: inline-block;
+    margin-bottom: .4rem;
+    border-bottom: 3px solid $green;
 }
