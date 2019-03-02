@@ -1,7 +1,9 @@
+@import 'components';
 @import 'reset.scss';
 @import 'header.scss';
 @import 'projects.scss';
 @import 'resume.scss';
+@import 'footer.scss';
 
 body {
     background-color: $green;
