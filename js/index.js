@@ -68,11 +68,32 @@ svg.selectAll('rect')
             return d/100 * 1.25;
         });
 
-
-// skillNames.forEach(function(i) {
-//     d3.select('js-chart__legend')
-//         .append('ul')
-//         .append('li')
-//         .text(i);
-//     console.log(i);
+// $('.nav-button').on('click', function() {
+//     $('body').toggleClass('show-nav');
+//     if ($('body').hasClass('show-nav')) {
+//
+//     } else {
+//         // $.ajax({
+//         //     type: 'GET',
+//         //     url: '_includes/nav.php',
+//         //     success: function(data) {
+//         //         $('body').prepend(data);
+//         //     },
+//         // };
+//     });
 // });
+
+$('.js-button-expand').on('click', function(e) {
+    var clicked = $(e.target);
+
+    var section = clicked.closest('section').attr('class');
+    console.log(section);
+
+    $.ajax({
+        type: 'GET',
+        url: '_includes/' + section + '.php',
+        success: function(data) {
+            $('body').prepend(data);
+        },
+    });
+});
