@@ -8,7 +8,7 @@
         <h3>Work</h3>
         <!-- MOBILE (list view) -->
         <ul>
-            <li class="work-item">
+            <li class="work-item  work-item">
                 <time class="work-item__time">01/2019 — now</time>
                 <h4 class="work-item__job">Yay Brigade</h4>
                 <p class="work-item__location">LA, CA</p>
@@ -29,7 +29,7 @@
     <div class="resume__school">
         <h3>School</h3>
         <ul>
-            <li class="school-item">
+            <li class="school-item  school-item--future">
                 <time class="school-item__time">Aug 2019 —</time>
                 <h4 class="school-item__name">Olin College of Engineering</h4>
             </li>

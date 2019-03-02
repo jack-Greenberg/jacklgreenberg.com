@@ -59,6 +59,9 @@
         .school-item {
             padding: 1em 0 1em 1em;
 
+            &--future {
+                opacity: .5;
+            }
             &__time {
                 font-size: .9em;
                 font-family: $sans;
