@@ -59,7 +59,7 @@ svg.selectAll('rect')
             return i * 16 * 1.5 + 'px';
         })
         .attr('height', '16px')
-        .attr('fill', '#354c18')
+        .attr('fill', '#343434')
         .attr('width', function(d){
             return d + '%';
         })
