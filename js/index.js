@@ -68,20 +68,20 @@ svg.selectAll('rect')
             return d/100 * 1.25;
         });
 
-// $('.nav-button').on('click', function() {
-//     $('body').toggleClass('show-nav');
-//     if ($('body').hasClass('show-nav')) {
-//
-//     } else {
-//         // $.ajax({
-//         //     type: 'GET',
-//         //     url: '_includes/nav.php',
-//         //     success: function(data) {
-//         //         $('body').prepend(data);
-//         //     },
-//         // };
-//     });
-// });
+$('.nav-button').on('click', function() {
+    $('body').toggleClass('show-nav');
+    // if ($('body').hasClass('show-nav')) {
+    //
+    // } else {
+    //     // $.ajax({
+    //     //     type: 'GET',
+    //     //     url: '_includes/nav.php',
+    //     //     success: function(data) {
+    //     //         $('body').prepend(data);
+    //     //     },
+    //     // };
+    // });
+});
 
 $('.js-button-expand').on('click', function(e) {
     var clicked = $(e.target);
@@ -89,11 +89,13 @@ $('.js-button-expand').on('click', function(e) {
     var section = clicked.closest('section').attr('class');
     console.log(section);
 
-    $.ajax({
-        type: 'GET',
-        url: '_includes/' + section + '.php',
-        success: function(data) {
-            $('body').prepend(data);
-        },
-    });
+    // history.pushState({
+    //     page: section,
+    // }, 'Jack Greenberg | ' + section, '/' + section);
+    //
+    // window.onpopstate = function(e) {
+    //     console.log(history.state.page);
+    // };
+
+    $('body').addClass(section + '--expanded');
 });
