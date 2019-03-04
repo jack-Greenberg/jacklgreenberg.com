@@ -4,7 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Jack Greenberg</title>
+    <?php
+        $uri = $_SERVER['REQUEST_URI'];
+        $section = preg_replace('/\//', '', $uri);
+
+        if ($section != "") {
+            echo "<title>Jack Greenberg | " . $section . "</title>";
+        } else {
+            echo "<title>Jack Greenberg</title>";
+        };
+    ?>
 
     <link rel="stylesheet" href="/dist/bundle.css">
 

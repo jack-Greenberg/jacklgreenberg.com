@@ -90,7 +90,8 @@ $('.js-button-expand').on('click', function(e) {
 
     history.pushState({
         page: section,
-    }, 'Jack Greenberg | ' + section, '/' + section);
+    }, null, '/' + section);
+    document.title = 'Jack Greenberg | ' + section;
 
     // window.onpopstate = function(e) {
     //     console.log(history.state.page);
@@ -104,4 +105,5 @@ $('.js-close-section-button').on('click', function() {
         return (className.match(/(.)*\-\-expanded*/) || []).join(' ') + ' show-nav';
     });
     history.pushState(null, null, '/');
+    document.title = 'Jack Greenberg';
 });
