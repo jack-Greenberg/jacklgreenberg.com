@@ -47,9 +47,8 @@ var ul = d3.select('.js-chart__legend')
 
 var svg = d3.select('.js-chart__graph')
     .append('svg')
-    .style('display', 'block')
     .style('width', '100%')
-    .style('height', '100%');
+    .style('height', '160px');
 
 svg.selectAll('rect')
     .data(skillNumbers)
