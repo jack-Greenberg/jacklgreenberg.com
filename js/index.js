@@ -69,17 +69,17 @@ svg.selectAll('rect')
 
 $('.nav-button').on('click', function() {
     $('body').toggleClass('show-nav');
-    if ($('body').hasClass('show-nav')) {
-        $.ajax({
-            type: 'GET',
-            url: '_includes/nav.php',
-            success: function(data) {
-                $('.expanded-section-overlay').prepend(data);
-            }
-        });
-    } else {
-        $('.expanded-section-overlay').empty();
-    };
+    // if ($('body').hasClass('show-nav')) {
+    //     $.ajax({
+    //         type: 'GET',
+    //         url: '_includes/nav.php',
+    //         success: function(data) {
+    //             $('.expanded-section-overlay').append(data);
+    //         }
+    //     });
+    // } else {
+    //     $('.expanded-section-overlay').empty();
+    // };
 });
 
 $('.js-button-expand').on('click', function(e) {

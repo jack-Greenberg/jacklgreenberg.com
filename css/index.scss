@@ -92,7 +92,11 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    display: none;
 
+    body[class$="--expanded"] & {
+        display: block;
+    }
     svg {
         width: 100%;
         height: auto;
