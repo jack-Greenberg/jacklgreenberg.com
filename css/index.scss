@@ -58,6 +58,9 @@ body {
                 fill: $purple;
             }
         }
+        body[class$="--expanded"] & {
+            display: none;
+        }
     }
 }
 
@@ -76,9 +79,24 @@ body {
     background-color: $green;
     transition: all .3s ease;
 
-    .show-nav & {
+    .show-nav &, body[class$="--expanded"] & {
         visibility: visible;
         transform: scale(1);
         opacity: 1;
+    }
+}
+.close-section-button {
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem 0 0 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    svg {
+        width: 100%;
+        height: auto;
+        fill: none;
+        stroke: $purple;
     }
 }
