@@ -88,13 +88,13 @@ $('.js-button-expand').on('click', function(e) {
     var section = clicked.closest('section').attr('class');
     console.log(section);
 
-    // history.pushState({
-    //     page: section,
-    // }, 'Jack Greenberg | ' + section, '/' + section);
-    //
-    // window.onpopstate = function(e) {
-    //     console.log(history.state.page);
-    // };
+    history.pushState({
+        page: section,
+    }, 'Jack Greenberg | ' + section, '/' + section);
+
+    window.onpopstate = function(e) {
+        console.log(history.state.page);
+    };
 
     $('body').addClass(section + '--expanded');
 });
