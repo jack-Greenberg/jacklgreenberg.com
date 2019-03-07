@@ -11,9 +11,26 @@
         if ($section != "") {
             echo "<title>Jack Greenberg | " . $section . "</title>";
         } else {
-            echo "<title>Jack Greenberg</title>";
+            echo "<title>Jack Greenberg | Front-end Developer</title>";
         };
     ?>
+
+    <meta name="description" content="I am a self-taught developer from Los Angeles.">
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Jack Greenberg | Front-end Developer">
+    <meta itemprop="description" content="I am a self-taught developer from Los Angeles.">
+    <meta itemprop="image" content="">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://jacklgreenberg.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jack Greenberg | Front-end Developer">
+    <meta property="og:description" content="I am a self-taught developer from Los Angeles.">
+    <meta property="og:image" content="">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jack Greenberg | Front-end Developer">
+    <meta name="twitter:description" content="I am a self-taught developer from Los Angeles.">
+    <meta name="twitter:image" content="">
 
     <link rel="stylesheet" href="/dist/bundle.css">
 

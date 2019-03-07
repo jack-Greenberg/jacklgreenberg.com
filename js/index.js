@@ -77,10 +77,6 @@ $('.nav-button').on('click', function() {
     $('body').toggleClass('show-nav');
 });
 
-$(document).ready(function() {
-    console.log(history.state);
-});
-
 // The expand-section button
 $('.js-button-expand').on('click', function(e) {
     var clicked = $(e.target);
