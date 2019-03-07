@@ -3,13 +3,11 @@ import textures from 'textures';
 
 var svg = d3.select('.js-texture-break')
     .append('svg')
-    .attr('viewBox', '0 0 100 50')
-    .style('display', 'block')
 ;
 
 var t = textures.lines()
-    .thicker()
-    .lighter()
+    .heavier()
+    .thinner(.7)
     .stroke('#dacaee')
 ;
 
@@ -17,8 +15,10 @@ svg.call(t);
 
 svg.append('rect')
 	.style('fill', t.url())
-    .style('width', '100%')
-    .style('height', '100%')
+    .attr('x', '0')
+    .attr('y', '0')
+    .attr('width', '100%')
+    .attr('height', '100%')
 ;
 
 ///////
