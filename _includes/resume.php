@@ -9,13 +9,13 @@
         <!-- MOBILE (list view) -->
         <ul>
             <li class="work-item  work-item">
-                <time class="work-item__time">01/2019 — now</time>
+                <p class="work-item__time">01/2019 — now</p>
                 <h4 class="work-item__job">Yay Brigade</h4>
                 <p class="work-item__location">LA, CA</p>
                 <p class="work-item__job-title">Developer / Intern</p>
             </li>
             <li class="work-item">
-                <time class="work-item__time">09 - 12/2018</time>
+                <p class="work-item__time">09 - 12/2018</p>
                 <h4 class="work-item__job">NRC Fluchtlingshilfe</h4>
                 <p class="work-item__location">Berlin, DE</p>
                 <p class="work-item__job-title">Intern / Data Architect</p>
@@ -30,11 +30,11 @@
         <h3>School</h3>
         <ul>
             <li class="school-item  school-item--future">
-                <time class="school-item__time">Aug 2019 —</time>
+                <p class="school-item__time">Aug 2019 —</p>
                 <h4 class="school-item__name">Olin College of Engineering</h4>
             </li>
             <li class="school-item">
-                <time class="school-item__time">2015 — 2018</time>
+                <p class="school-item__time">2015 — 2018</p>
                 <h4 class="school-item__name">Oakwood School</h4>
             </li>
         </ul>
