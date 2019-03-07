@@ -77,34 +77,32 @@ $('.nav-button').on('click', function() {
     $('body').toggleClass('show-nav');
 });
 
+$(document).ready(function() {
+    console.log(history.state);
+});
+
 // The expand-section button
 $('.js-button-expand').on('click', function(e) {
     var clicked = $(e.target);
     var section = clicked.closest('section').attr('class');
 
     history.pushState({page: section}, null, '/' + section);
+    console.log(history.state);
     document.title = 'Jack Greenberg | ' + section;
     $('body').addClass(section + '--expanded');
 });
 
 // Overrides the back button, and uses it to remove the section
 $(window).on('popstate', function(e) {
-    var s = e.originalEvent.state;
-
-    if (s == null) {
-        history.pushState(null, null, '/');
-        document.title = 'Jack Greenberg';
-        $('body').removeClass(function(i, className) {
-            return (className.match(/(.)*\-\-expanded*/) || []).join(' ') + ' show-nav';
-        });
+    if (history.state != null) {
+        history.back
     };
+    $('body').removeClass(function(i, className) {
+        return (className.match(/(.)*\-\-expanded*/) || []).join(' ') + ' show-nav';
+    });
 });
 
 // The 'close section' button on the page (<-)
 $('.js-close-section-button').on('click', function() {
-    $('body').removeClass(function(i, className) {
-        return (className.match(/(.)*\-\-expanded*/) || []).join(' ') + ' show-nav';
-    });
-    history.pushState(null, null, '/');
-    document.title = 'Jack Greenberg';
+    history.back();
 });
