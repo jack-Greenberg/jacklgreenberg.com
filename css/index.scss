@@ -87,9 +87,9 @@ body {
     transition: all .3s ease;
 
     .show-nav &, body[class$="--expanded"] & {
-        visibility: visible;
-        transform: scale(1);
-        opacity: 1;
+        // visibility: visible;
+        // transform: scale(1);
+        // opacity: 1;
     }
 }
 .close-section-button {
