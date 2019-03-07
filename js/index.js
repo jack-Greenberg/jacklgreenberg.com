@@ -94,22 +94,8 @@ $('.js-button-expand').on('click', function(e) {
 
 // Overrides the back button, and uses it to remove the section
 $(window).on('popstate', function(e) {
-<<<<<<< HEAD
     if (history.state != null) {
         history.back();
-||||||| merged common ancestors
-    var s = e.originalEvent.state;
-
-    if (s == null) {
-        history.pushState(null, null, '/');
-        document.title = 'Jack Greenberg';
-        $('body').removeClass(function(i, className) {
-            return (className.match(/(.)*\-\-expanded*/) || []).join(' ') + ' show-nav';
-        });
-=======
-    if (history.state != null) {
-        history.back
->>>>>>> 21efaba7a2f772b636c46406e30097db05bb12d3
     };
     $('body').removeClass(function(i, className) {
         return (className.match(/(.)*\-\-expanded*/) || []).join(' ') + ' show-nav';
