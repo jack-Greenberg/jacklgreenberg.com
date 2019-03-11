@@ -28,9 +28,10 @@ var skillData = {
     'Git': 80,
     'JS': 75,
     'PHP': 70,
+    'NGINX': 60,
     'Webpack': 60,
     'React': 50,
-    'Python': 40
+    'Python': 40,
 };
 var skillNames = Object.keys(skillData);
 var skillNumbers = Object.values(skillData);
@@ -52,7 +53,7 @@ var ul = d3.select('.js-chart__legend')
 var svg = d3.select('.js-chart__graph')
     .append('svg')
     .style('width', '100%')
-    .style('height', '160px')
+    .style('height', (skillNames.length * 16) + (skillNames.length * 7) + 'px')
 ;
 
 svg.selectAll('rect')
