@@ -8,7 +8,7 @@
         <h3>Work</h3>
         <!-- MOBILE (list view) -->
         <ul>
-            <li class="work-item  work-item">
+            <li class="work-item">
                 <p class="work-item__time">01/2019 — now</p>
                 <h4 class="work-item__job">Yay Brigade</h4>
                 <p class="work-item__location">LA, CA</p>
@@ -20,10 +20,8 @@
                 <p class="work-item__location">Berlin, DE</p>
                 <p class="work-item__job-title">Intern / Data Architect</p>
             </li>
-            <li class="work-item"><a href="">More...</a></li>
         </ul>
-
-        <!-- DESKTOP (timeline) -->
+        <a class="resume__work__see-more" href="/projects">more...</a>
     </div>
 
     <div class="resume__school">
