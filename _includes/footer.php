@@ -6,6 +6,4 @@
         <li><a href="https://github.com/jack-Greenberg/">Github</a></li>
         <li><a href="https://instagram.com/greenberg__">Instagram</a></li>
     </ul>
-    <!-- <br> -->
-    <!-- <p class="redesign">This is the <span class="js-redesign"></span> time I've redesigned my site</p> -->
 </footer>
