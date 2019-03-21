@@ -3,3 +3,4 @@ node_modules/
 dist/
 design/
 .ftpconfig
+.atom-build.json

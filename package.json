@@ -13,12 +13,12 @@
     "url": "https://github.com/jack-Greenberg/jacklgreenberg.com"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
-    "autoprefixer": "^9.4.9",
+    "autoprefixer": "^9.4.10",
     "babel-loader": "^8.0.5",
-    "css-loader": "^2.1.0",
+    "css-loader": "^2.1.1",
     "d3": "^5.9.1",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
@@ -26,7 +26,7 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "textures": "^1.2.0",
-    "webpack": "^4.28.1",
-    "webpack-cli": "^3.2.1"
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
   }
 }
