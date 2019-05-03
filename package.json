@@ -25,6 +25,7 @@
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "tar": ">=4.4.2",
     "textures": "^1.2.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
