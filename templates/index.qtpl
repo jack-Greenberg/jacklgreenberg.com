@@ -1,0 +1,25 @@
+{% import "github.com/qiangxue/fasthttp-routing" %}
+
+{% code
+type MainPage struct {
+	CTX *routing.Context
+}
+%}
+
+{% func (p *MainPage) Title() %}
+Jack Greenberg | Electrical Engineer
+{% endfunc %}
+
+
+{% func (p *MainPage) Body() %}
+	<h1>Main page</h1>
+	<div>
+		Click links below:
+		<ul>
+			<li><a href="/unknown-page">Error page</a></li>
+		</ul>
+	</div>
+	<div>
+		Some info about you:<br/>
+	</div>
+{% endfunc %}
