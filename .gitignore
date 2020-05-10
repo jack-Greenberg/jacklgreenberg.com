@@ -1,3 +1,4 @@
+resources/
 .babelrc
 node_modules/
 dist/

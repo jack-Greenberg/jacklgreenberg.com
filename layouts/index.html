@@ -1,23 +1,23 @@
 {{ define "main" }}
-<main>
+<main class="main">
     <div class="site-image">
 
     </div>
 
-    <div>
-        <div>
-            <h1>
+    <div class="banner">
+        <div class="banner__intro">
+            <h1 class="banner__intro__title">
                 Jack Greenberg
             </h1>
-            <h2>
+            <h2 class="banner__intro__subtitle">
                 Electrical and Firmware Engineer
             </h2>
-            <p>
+            <p class="banner__intro__description">
                 I’m an engineering student at Olin College of Engineering in Needham, MA. I’m passionate about embedded software and electrical design. I also play jazz bass.
             </p>
         </div>
 
-        {{ partial "header" . }}
+        {{ partial "nav" . }}
 
     </div>
 </main>

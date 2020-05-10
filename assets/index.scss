@@ -1,2 +1,43 @@
 @import 'reset';
 @import 'variables';
+@import 'base';
+@import 'nav';
+
+body {
+    background-color: $bg;
+}
+
+p {
+    color: $fg;
+}
+
+h1 {
+    font-size: $h1;
+    font-family: $sans;
+    font-weight: 600;
+    color: $main;
+}
+
+h2 {
+    font-size: $h2;
+    font-family: $sans;
+    font-weight: 500;
+    color: $main;
+}
+
+h3 {
+    font-size: $h3;
+}
+
+.banner {
+
+    &__intro {
+
+        &__title {}
+        &__subtitle {}
+        &__description {
+            font-size: 18px;
+            font-family: $mono;
+        }
+    }
+}
