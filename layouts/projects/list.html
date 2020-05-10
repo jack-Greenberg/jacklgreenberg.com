@@ -1,0 +1,25 @@
+{{ define "main" }}
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Content }}</p>
+
+    <section>
+        {{ range where .Pages "Params.featured" "eq" true }}
+            <p>Featured</p>
+            <h2>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h2>
+
+            <p>
+                {{ .Summary }}
+            </p>
+            <a href="#">Learn More</a>
+        {{ end }}
+    </section>
+
+    <section>
+        <h2>Full List</h2>
+        {{ range .Pages }}
+            <p>{{ .Title }}</p>
+        {{ end }}
+    </section>
+{{ end }}

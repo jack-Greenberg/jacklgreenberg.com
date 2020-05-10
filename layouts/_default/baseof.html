@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ block "title" . }}
+            {{ .Site.Title }}
+        {{ end }}</title>
+
+        {{ $styles := resources.Get "index.scss" | toCSS | postCSS | minify | fingerprint }}
+        {{ $style := $styles | resources.ToCSS }}
+
+        <link rel="stylesheet" href="{{ $style.Permalink }}">
+    </head>
+
+    <body>
+    {{ block "main" . }}
+
+    {{ end }}
+
+    {{- block "footer" . -}}
+        {{- partial "footer" . -}}
+    {{- end -}}
+    </body>
+</html>
