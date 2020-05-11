@@ -2,12 +2,5 @@
 @import 'fonts';
 
 // Font variables
-
-// Sizes
-$base: 1rem;
-
-$h1: $base * 4.5;
-$h2: $base * 2;
-$h3: $base * 1;
-
-$subtitle: $base * 1.6;
+$sans: 'Fira Sans', sans-serif;
+$mono: 'Fira Code', monospace;

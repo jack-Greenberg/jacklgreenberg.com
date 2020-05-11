@@ -6,6 +6,8 @@
             {{ .Site.Title }}
         {{ end }}</title>
 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         {{ $styles := resources.Get "index.scss" | toCSS | postCSS | minify | fingerprint }}
         {{ $style := $styles | resources.ToCSS }}
 
@@ -13,12 +15,8 @@
     </head>
 
     <body class="root">
-    {{ block "main" . }}
+        {{ block "main" . }}
 
-    {{ end }}
-
-    {{- block "footer" . -}}
-        {{- partial "footer" . -}}
-    {{- end -}}
+        {{ end }}
     </body>
 </html>

@@ -2,42 +2,96 @@
 @import 'variables';
 @import 'base';
 @import 'nav';
+@import 'footer';
 
-body {
+.root {
     background-color: $bg;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 4rem;
 }
 
-p {
-    color: $fg;
+// Index page
+.site-image {
+    padding: 1em;
+    max-width: 30em;
+    margin: 0 auto;
+
+    @media only screen and (min-width: 400px) {
+        font-size: 1.2em;
+    }
+    @media only screen and (min-width: 700px) {
+        max-width: 40em;
+        display: flex;
+        font-size: 1.4em;
+        margin-bottom: 0;
+    }
+    img {
+        padding-top: 1rem;
+        max-width: 10em;
+        height: auto;
+        width: 100%;
+    }
 }
 
-h1 {
-    font-size: $h1;
-    font-family: $sans;
-    font-weight: 600;
-    color: $main;
-}
+.main {
+    padding: 1rem;
+    max-width: 30em;
+    margin: 0 auto;
 
-h2 {
-    font-size: $h2;
-    font-family: $sans;
-    font-weight: 500;
-    color: $main;
-}
+    @media only screen and (min-width: 400px) {
+        font-size: 1.2em;
+    }
+    @media only screen and (min-width: 700px) {
+        font-size: 1.3em;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        max-width: 40em;
 
-h3 {
-    font-size: $h3;
-}
+        & > .banner {
+            border-right: 3px solid $fg;
+            max-width: unset;
+            padding-right: 3rem;
+        }
+        & > .nav {
+            white-space: nowrap;
+        }
+    }
+    @media only screen and (min-width: 1000px) {
+        font-size: 1.6em;
+    }
+    .banner {
+        &__title {
+            font-size: 2.5em;
+            font-family: $sans;
+            font-weight: 600;
+            color: $main;
+            margin-bottom: .5rem;
+        }
+        &__subtitle {
+            font-size: 1.25em;
+            font-family: $sans;
+            font-weight: 500;
+            color: $main;
+            margin-bottom: 1.5rem;
 
-.banner {
-
-    &__intro {
-
-        &__title {}
-        &__subtitle {}
+            @media only screen and (min-width: 700px) {
+                font-size: .8em;
+            }
+        }
         &__description {
-            font-size: 18px;
+            font-size: .825em;
             font-family: $mono;
+            color: $fg;
+            width: 80%;
+            // max-width: 20em;
+
+            @media only screen and (min-width: 700px) {
+                font-size: .6em;
+                max-width: 30em;
+            }
         }
     }
 }
