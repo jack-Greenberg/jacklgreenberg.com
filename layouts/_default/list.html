@@ -1,15 +1,18 @@
 {{ define "main" }}
-    <h1>{{ .Title }}</h1>
-    <p>{{ .Content }}</p>
+<main class="{{ .Title }}">
+    {{ partial "header" . }}
+
+    <h1 class="h1">{{ .Title }}</h1>
+    <p class="copy">{{ .Content }}</p>
 
     <section>
         {{ range where .Pages "Params.featured" "eq" true }}
-            <p>Featured</p>
-            <h2>
+            <p class="label">Featured</p>
+            <h2 class="h2">
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
             </h2>
 
-            <p>
+            <p class="copy">
                 {{ .Summary }}
             </p>
             <a href="#">Learn More</a>
@@ -22,4 +25,5 @@
             <p>{{ .Title }}</p>
         {{ end }}
     </section>
+</main>
 {{ end }}

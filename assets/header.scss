@@ -1,0 +1,13 @@
+.header {
+
+    &__title {
+        font-size: 2em;
+        font-family: $sans;
+        color: $accent;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+}
