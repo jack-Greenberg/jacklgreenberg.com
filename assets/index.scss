@@ -6,40 +6,36 @@
 @import 'header';
 @import 'footer';
 
-@import 'projects';
-
 .root {
     background-color: $bg;
     position: relative;
     min-height: 100vh;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem; // This is to make sure the footer has enough room on the bottom to not overlap text
 }
 
 // Index page
 .site-image {
-    padding: 1em;
-    max-width: 30em;
     margin: 0 auto;
+    height: map-get($image-size, small);
+    width: auto;
 
     @media only screen and (min-width: 400px) {
-        font-size: 1.2em;
+        height: map-get($image-size, medium);
     }
     @media only screen and (min-width: 700px) {
-        max-width: 40em;
-        display: flex;
-        font-size: 1.4em;
+        height: map-get($image-size, large);
+    }
+
+    @media only screen and (min-width: 700px) {
         margin-bottom: 0;
     }
     img {
-        padding-top: 1rem;
-        max-width: 10em;
-        height: auto;
-        width: 100%;
+        height: 100%;
+        width: auto;
     }
 }
 
-.main {
-    padding: 1rem;
+.index-main {
     max-width: 30em;
     margin: 0 auto;
 
@@ -48,16 +44,14 @@
     }
     @media only screen and (min-width: 700px) {
         font-size: 1.3em;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: center;
         max-width: 40em;
+        margin: 0;
+        padding: 0;
 
         & > .banner {
             border-right: 3px solid $fg;
             max-width: unset;
-            padding-right: 3rem;
+            padding-right: 2rem;
         }
         & > .nav {
             white-space: nowrap;
@@ -67,6 +61,8 @@
         font-size: 1.6em;
     }
     .banner {
+        margin-top: 2rem; // This value is also set in the top margin of the nav for the index page
+
         &__title {
             font-size: 2.5em;
             font-family: $sans;
@@ -90,12 +86,20 @@
             font-family: $mono;
             color: $fg;
             width: 80%;
-            // max-width: 20em;
 
             @media only screen and (min-width: 700px) {
                 font-size: .6em;
                 max-width: 30em;
             }
         }
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .main-flex {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding-top: 3rem;
     }
 }

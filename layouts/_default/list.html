@@ -1,29 +1,42 @@
 {{ define "main" }}
-<main class="{{ .Title }}">
+<div class="Page">
     {{ partial "header" . }}
+    <div class="Content__wrapper">
+        <main role="main" class="Content">
+            <h1 class="Content__title">{{ .Title }}</h1>
+            <p>{{ .Content }}</p>
 
-    <h1 class="h1">{{ .Title }}</h1>
-    <p class="copy">{{ .Content }}</p>
+            <!-- Featured project -->
+            <section class="Section">
+                {{ range where .Pages "Params.featured" "eq" true }}
+                    <p class="Section__label">Featured</p>
+                    <h2 class="Section__title">
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </h2>
 
-    <section>
-        {{ range where .Pages "Params.featured" "eq" true }}
-            <p class="label">Featured</p>
-            <h2 class="h2">
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-            </h2>
+                    <div class="Section__paragraph">
+                        {{ .Summary }}
+                        <a href="{{ .Permalink }}">Learn More</a>
+                    </div>
+                {{ end }}
+            </section>
 
-            <p class="copy">
-                {{ .Summary }}
-            </p>
-            <a href="#">Learn More</a>
-        {{ end }}
-    </section>
-
-    <section>
-        <h2>Full List</h2>
-        {{ range .Pages }}
-            <p>{{ .Title }}</p>
-        {{ end }}
-    </section>
-</main>
+            <!-- Full list of projects -->
+            <section class="Section">
+                <h2 class="Section__title">Full List</h2>
+                {{ range .Pages.GroupByParam "year" "desc" }}
+                <div class="List">
+                    <h3 class="List__title">{{ .Key }}</h3>
+                    <ul class="List__element">
+                        {{ range .Pages }}
+                        <li class="List__item"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+            </section>
+        </main>
+        {{- partial "footer" . -}}
+    </div>
+</div>
 {{ end }}

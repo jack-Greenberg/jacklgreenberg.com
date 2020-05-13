@@ -1,37 +1,109 @@
-h1 {
-    font-size: 4em;
-    font-family: $sans;
-    color: $accent;
-    font-weight: bold;
+.Page {
+    padding: 2em 2em 0;
 
-    a {
-        color: inherit;
-        text-decoration: none;
+    @media only screen and (min-width: 400px) {
+        font-size: 1.1em;
+    }
+    @media only screen and (min-width: 700px) {
+        font-size: 1.2em;
     }
 }
 
-h2 {
-    font-size: 2em;
-    font-family: $sans;
-    color: $accent;
-    font-weight: bold;
+.Content {
 
-    a {
-        color: inherit;
-        text-decoration: none;
+    // Align footer and content
+    &__wrapper {
+        max-width: 40em;
+        margin: 0 auto;
+    }
+    &__title {
+        @include h1-like;
+        margin-bottom: 1em;
     }
 }
 
-.label {
-    font-size: 1.25em;
-    font-family: $sans;
-    font-variant: small-caps;
-    font-weight: bold;
-    color: $accent;
+.Section {
+    margin-bottom: 3em;
+
+    &__title {
+        @include h2-like;
+        margin-bottom: .8em;
+    }
+    &__label {
+        @include h4-like;
+        font-variant: small-caps;
+    }
+    &__paragraph {
+        @include paragraph-like;
+
+        a {
+            @include a;
+        }
+    }
 }
 
-p {
-    font-family: $mono;
-    color: $fg;
-    line-height: 1.5em;
+.List {
+
+    &__title {
+        @include h3-like;
+        margin-bottom: .8em;
+    }
+    &__element {
+        list-style-type: none;
+    }
+    &__item {
+        color: $fg;
+        font-size: .8em;
+        margin-bottom: 1em;
+
+        a {
+            @include a;
+            @include reset-a;
+        }
+    }
 }
+
+// .page {
+//     padding: 1em;
+//
+//     @media only screen and (min-width: 400px) {
+//         font-size: 1.1em;
+//     }
+//     @media only screen and (min-width: 700px) {
+//         padding: 2em;
+//         font-size: 1.2em;
+//     }
+// }
+// .main {
+//     padding-top: 2rem;
+//     max-width: 40rem;
+//     margin: 0 auto;
+//
+//     @media only screen and (min-width: 700px) {
+//         padding-top: 0;
+//         margin-top: 5rem;
+//     }
+// }
+
+
+
+// .list-like {
+//     list-style-type: none;
+//
+//     li {
+//         font-size: .8em;
+//         font-family: $mono;
+//         color: $fg;
+//
+//         margin-bottom: 1em;
+//
+//         a {
+//             color: inherit;
+//             text-decoration: none;
+//
+//             &:hover {
+//                 color: $accent;
+//             }
+//         }
+//     }
+// }

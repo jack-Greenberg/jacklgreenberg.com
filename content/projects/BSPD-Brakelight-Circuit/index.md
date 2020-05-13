@@ -2,7 +2,6 @@
 title: "BSPD Brakelight Circuit"
 date: 2020-05-11T18:20:30-07:00
 year: 2020
-image: ""
 draft: false
 featured: false
 ---
