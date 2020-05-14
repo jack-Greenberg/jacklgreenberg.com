@@ -1,0 +1,192 @@
+@mixin markdown {
+    h1 {
+        @include h1-like;
+        margin-bottom: .8em;
+        position: relative;
+
+        .project-image {
+            height: 4em;
+            position: relative;
+            display: block;
+            margin: .5em auto 0em;
+            z-index: -1;
+
+            @media only screen and (min-width: 700px) {
+                margin: 0;
+                position: absolute;
+                top: -2.75em;
+                right: 0;
+            }
+        }
+    }
+    h2 {
+        @include h2-like;
+        margin: 1em 0 .6em;
+    }
+    h3 {
+        @include h3-like;
+        margin: 1em 0 .6em;
+    }
+    p {
+        @include paragraph-like;
+        width: 100%;
+        margin-bottom: 1em;
+
+        a {
+            color: inherit;
+            &:hover {
+                color: $accent;
+            }
+        }
+        code {
+            border: 1px solid #999;
+            border-radius: 3px;
+            padding: 1px;
+            color: #cc241d;
+            background-color: #bdae93;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+        }
+    }
+    & > a {
+        @include a;
+        font-size: .8em;
+        color: $fg;
+
+        &::before {
+            content: '[ ';
+        }
+        &::after {
+            content: ' ]';
+        }
+    }
+    a.footnote-ref {
+        padding-left: 3px;
+    }
+    hr {
+        margin: 2em 0;
+    }
+
+    ul {
+        list-style-type: none;
+        margin-bottom: 1em;
+
+        li {
+            @include paragraph-like;
+
+            &::before {
+                content: '* ';
+            }
+        }
+    }
+    ol {
+        counter-reset: section;
+        list-style-type: none;
+        margin-bottom: 1em;
+
+        li {
+            @include paragraph-like;
+
+            &::before {
+                content: counter(section) ". ";
+                counter-increment: section;
+            }
+        }
+    }
+
+    // Code block
+    .highlight > div {
+        border-radius: 5px;
+
+        table {
+            font-size: 1em;
+            padding: .5em !important;
+            position: relative;
+            background-color: unset !important;
+            display: block;
+            margin: 0;
+
+            pre {
+                position: relative;
+
+                [class^=language-]::after {
+                    content: attr(data-lang);
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    color: #999;
+                }
+            }
+            td {
+                font-size: 1em;
+            }
+            // Don't allow users to select numbers
+            td:first-child {
+                user-select: none;
+            }
+        }
+    }
+
+    table {
+        border-collapse: collapse;
+        border: 1px solid white;
+        color: $fg;
+        font-size: .8em;
+        font-family: $mono;
+        margin: 1em auto 1em;
+
+        th, td {
+            border: 1px solid #999;
+            padding: .5em;
+        }
+        td {
+            font-size: .8em;
+
+            a {
+                @include reset-a;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    blockquote {
+        margin: 2em 0;
+        border-left: 4px solid $fg;
+        padding: .5em 0 .5em 1em;
+        background-color: lighten($bg, 10);
+
+        p {
+            @include paragraph-like;
+            margin-bottom: 0;
+        }
+    }
+
+    figure {
+        text-align: center;
+        width: 100%;
+        margin: 1em auto;
+        display: block;
+
+        img {
+            width: 80%;
+            margin-bottom: .5em;
+        }
+        figcaption > p {
+            font-size: .8em;
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+    }
+
+    section.footnotes {
+
+        hr {
+            margin-bottom: 1em;
+        }
+        ol > li > p {
+            font-size: 1em;
+            display: inline
+        }
+    }
+}

@@ -8,7 +8,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        {{ $styles := resources.Get "index.scss" | toCSS | postCSS | minify | fingerprint }}
+        {{ $styles := resources.Get "index.scss" | toCSS | minify | fingerprint }}
         {{ $style := $styles | resources.ToCSS }}
 
         <link rel="stylesheet" href="{{ $style.Permalink }}">

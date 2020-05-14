@@ -27,6 +27,7 @@
     height: 100vh;
     margin: 0 auto;
     background-color: $bg;
+    z-index: 9;
 
     @media only screen and (min-width: 700px) {
         display: block;

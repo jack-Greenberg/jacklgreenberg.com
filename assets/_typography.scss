@@ -24,7 +24,7 @@ $mono: 'Fira Code', monospace;
 
 @mixin h3-like {
     @include h2-like;
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: 500;
 }
 
@@ -38,13 +38,7 @@ $mono: 'Fira Code', monospace;
     font-size: .8em;
     font-family: $mono;
     color: $fg;
-    margin-bottom: 2em;
-    max-width: 30em;
-
-    p {
-        line-height: 1.5em;
-        margin-bottom: 1em;
-    }
+    line-height: 1.5em;
 }
 
 @mixin reset-a {
@@ -53,10 +47,10 @@ $mono: 'Fira Code', monospace;
 }
 
 @mixin a {
+    @include reset-a;
     font-family: $mono;
     white-space: nowrap;
 
-    @include reset-a;
 
     &:hover {
         color: $accent;

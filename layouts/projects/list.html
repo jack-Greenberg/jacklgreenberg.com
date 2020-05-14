@@ -1,35 +1,36 @@
 {{ define "main" }}
 <div class="Page">
     {{ partial "header" . }}
-    <div class="Content__wrapper">
-        <main role="main" class="Content">
-            <h1 class="Content__title">{{ .Title }}</h1>
-            <p>{{ .Content }}</p>
-
+    <div class="footer__wrapper">
+        <main role="main">
+            <div class="Content">
+                <h1 class="h1">{{ .Title }}</h1>
+                <p>{{ .Content }}</p>
+            </div>
             <!-- Featured project -->
-            <section class="Section">
+            <section class="Feature">
                 {{ range where .Pages "Params.featured" "eq" true }}
-                    <p class="Section__label">Featured</p>
-                    <h2 class="Section__title">
-                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    <p class="Feature__label">Featured</p>
+                    <h2 class="Feature__title">
+                        <a href="{{ .Permalink | relURL }}">{{ .Title }}</a>
                     </h2>
 
-                    <div class="Section__paragraph">
+                    <div class="Feature__summary">
                         {{ .Summary }}
-                        <a href="{{ .Permalink }}">Learn More</a>
+                        <a href="{{ .Permalink | relURL }}">Learn More</a>
                     </div>
                 {{ end }}
             </section>
 
             <!-- Full list of projects -->
-            <section class="Section">
-                <h2 class="Section__title">Full List</h2>
+            <section class="ListOfList">
+                <h2 class="ListOfList__title">Full List</h2>
                 {{ range .Pages.GroupByParam "year" "desc" }}
                 <div class="List">
                     <h3 class="List__title">{{ .Key }}</h3>
                     <ul class="List__element">
                         {{ range .Pages }}
-                        <li class="List__item"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                        <li class="List__item"><a href="{{ .Permalink | relURL }}">{{ .Title }}</a></li>
                         {{ end }}
                     </ul>
                 </div>
