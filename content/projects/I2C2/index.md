@@ -2,6 +2,7 @@
 title: "I2C2"
 date: 2020-05-11T20:43:04-07:00
 year: 2020
+image: "images/main.svg"
 draft: false
 featured: true
 ---

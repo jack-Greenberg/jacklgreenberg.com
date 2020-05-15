@@ -29,7 +29,7 @@
                 <div class="List">
                     <h3 class="List__title">{{ .Key }}</h3>
                     <ul class="List__element">
-                        {{ range .Pages }}
+                        {{ range .Pages.ByTitle }}
                         <li class="List__item"><a href="{{ .Permalink | relURL }}">{{ .Title }}</a></li>
                         {{ end }}
                     </ul>
