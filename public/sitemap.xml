@@ -3,40 +3,55 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/projects/i2c2/</loc>
+    <loc>https://jacklgreenberg.com/admin/</loc>
+    <lastmod>2020-05-14T18:50:36-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacklgreenberg.com/</loc>
+    <lastmod>2020-05-14T18:50:36-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacklgreenberg.com/projects/</loc>
+    <lastmod>2020-05-14T15:55:50-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacklgreenberg.com/projects/tools-olin-edu/</loc>
+    <lastmod>2020-05-14T15:55:50-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacklgreenberg.com/projects/neato-gauntlet/</loc>
+    <lastmod>2020-05-13T20:20:30-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacklgreenberg.com/projects/i2c2/</loc>
     <lastmod>2020-05-11T20:43:04-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
-    <lastmod>2020-05-11T20:43:04-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/projects/</loc>
-    <lastmod>2020-05-11T20:43:04-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/projects/shutdown-sense/</loc>
+    <loc>https://jacklgreenberg.com/projects/shutdown-sense/</loc>
     <lastmod>2020-05-11T18:20:40-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/projects/bspd-brakelight-circuit/</loc>
+    <loc>https://jacklgreenberg.com/projects/bspd/</loc>
     <lastmod>2020-05-11T18:20:30-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/about/</loc>
+    <loc>https://jacklgreenberg.com/about/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://jacklgreenberg.com/categories/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://jacklgreenberg.com/tags/</loc>
   </url>
   
 </urlset>

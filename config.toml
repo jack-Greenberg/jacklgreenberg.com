@@ -2,6 +2,8 @@ baseURL = "https://jacklgreenberg.com"
 languageCode = "en-us"
 title = "Jack Greenberg"
 
+# ignoreFiles = [ "\\.xcf$" ]
+
 [params]
   subtitle = "Electrical and Firmware Engineer"
 

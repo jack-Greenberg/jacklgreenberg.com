@@ -1,5 +1,5 @@
 resources/
-.babelrc
+# .babelrc
 node_modules/
 dist/
 design/

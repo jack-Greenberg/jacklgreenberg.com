@@ -2,40 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Jack Greenberg</title>
-    <link>http://example.org/projects/</link>
+    <link>https://jacklgreenberg.com/projects/</link>
     <description>Recent content in Projects on Jack Greenberg</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 May 2020 20:43:04 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2020 15:55:50 -0700</lastBuildDate>
     
-	<atom:link href="http://example.org/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacklgreenberg.com/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Tools Olin Edu</title>
+      <link>https://jacklgreenberg.com/projects/tools-olin-edu/</link>
+      <pubDate>Thu, 14 May 2020 15:55:50 -0700</pubDate>
+      
+      <guid>https://jacklgreenberg.com/projects/tools-olin-edu/</guid>
+      <description>&lt;p&gt;Summary paragraph will go here&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NEATO Gauntlet</title>
+      <link>https://jacklgreenberg.com/projects/neato-gauntlet/</link>
+      <pubDate>Wed, 13 May 2020 20:20:30 -0700</pubDate>
+      
+      <guid>https://jacklgreenberg.com/projects/neato-gauntlet/</guid>
+      <description>&lt;p&gt;Summary paragraph will go here&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>I2C2</title>
-      <link>http://example.org/projects/i2c2/</link>
+      <link>https://jacklgreenberg.com/projects/i2c2/</link>
       <pubDate>Mon, 11 May 2020 20:43:04 -0700</pubDate>
       
-      <guid>http://example.org/projects/i2c2/</guid>
+      <guid>https://jacklgreenberg.com/projects/i2c2/</guid>
       <description>&lt;p&gt;I wrote an implementation of the I2C protocol (inter-integrated chip) in C. The project was partly for my Software Systems class, and partly for the Olin Electric Motorsports team.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Shutdown Sense</title>
-      <link>http://example.org/projects/shutdown-sense/</link>
+      <title>Shutdown Sense Circuit</title>
+      <link>https://jacklgreenberg.com/projects/shutdown-sense/</link>
       <pubDate>Mon, 11 May 2020 18:20:40 -0700</pubDate>
       
-      <guid>http://example.org/projects/shutdown-sense/</guid>
+      <guid>https://jacklgreenberg.com/projects/shutdown-sense/</guid>
       <description>&lt;p&gt;Summary paragraph will go here&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>BSPD Brakelight Circuit</title>
-      <link>http://example.org/projects/bspd-brakelight-circuit/</link>
+      <link>https://jacklgreenberg.com/projects/bspd/</link>
       <pubDate>Mon, 11 May 2020 18:20:30 -0700</pubDate>
       
-      <guid>http://example.org/projects/bspd-brakelight-circuit/</guid>
-      <description>&lt;p&gt;Summary paragraph will go here&amp;hellip;&lt;/p&gt;</description>
+      <guid>https://jacklgreenberg.com/projects/bspd/</guid>
+      <description>&lt;p&gt;Testing out some &lt;em&gt;italic&lt;/em&gt; text, some &lt;strong&gt;bold&lt;/strong&gt; text, and &lt;a href=&#34;https://google.com&#34;&gt;maybe&lt;/a&gt; even some &lt;del&gt;strikethrough&lt;/del&gt;. Oh and &lt;code&gt;lots of code&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

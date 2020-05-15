@@ -6,7 +6,9 @@
         <main class="Content">
             <h1>
                 {{ .Title }}
+                {{ if isset .Params "image" }}
                 <img class="project-image" src="{{ .Params.image }}" />
+                {{ end }}
             </h1>
 
             <!-- Markdown -->
