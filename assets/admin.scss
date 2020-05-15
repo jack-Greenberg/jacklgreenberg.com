@@ -1,0 +1,33 @@
+.Admin {
+    position: relative;
+}
+
+.AdminPage {
+
+}
+
+.AdminSidebar {
+    display: none;
+
+    &-trigger {
+
+        &__checkbox {
+            display: none;
+        }
+        &__button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            
+            input:checked ~ & > &--menu {
+                display: none;
+            }
+            input:not(:checked) ~ & > &--x {
+                display: none;
+            }
+        }
+    }
+    &-trigger__checkbox:checked ~ & {
+        display: block;
+    }
+}
