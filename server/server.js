@@ -9,16 +9,13 @@ api.use(cors());
 const rootFolder = '../../';
 
 export function listArchetypes() {
-    var folder = path.join(rootFolder, 'archetypes');
-    return fs.readdirSync(folder).map(item => {
+    var folder = path.join(rootFolder, 'content');
+    return fs.readdirSync(folder).filter(item => item !== 'admin').map(item => {
         return {
             name: item.charAt(0).toUpperCase() + item.replace(".md", "").slice(1),
         };
-        // return path.join(folder, item);
     });
 }
-
-// console.log(listArchetypes());
 
 api.get('/archetypes', function (req, res) {
     res.type('application/json');

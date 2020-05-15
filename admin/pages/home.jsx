@@ -1,13 +1,13 @@
 import React from 'react';
 
-export class Archetype extends React.Component {
+export class Home extends React.Component {
     constructor(props) {
         super(props);
     }
     render() {
         return (
             <div>
-                {this.props.name}
+                <h1>Home</h1>
             </div>
         )
     }

@@ -32,23 +32,22 @@ export class Sidebar extends React.Component {
     render() {
         if (this.state.ready) {
             var archetypes = this.state.archetypes.map(item => {
-                return <li><Link to={"/archetypes/" + item.name.toLowerCase()}>{item.name}</Link></li>;
+                return <li><Link to={"/" + item.name.toLowerCase()}>{item.name}</Link></li>;
             })
 
             return (
                 <>
-                    <input id="AdminSidebar-trigger" type="checkbox" className="AdminSidebar-trigger__checkbox" />
-                    <label htmlFor="AdminSidebar-trigger" className="AdminSidebar-trigger__button">
-                        <span className="AdminSidebar-trigger__button--menu"><Icon.Menu /></span>
-                        <span className="AdminSidebar-trigger__button--x"><Icon.X /></span>
+                    <input id="sidebar-trigger" type="checkbox" className="sidebar-trigger__checkbox" />
+                    <label htmlFor="sidebar-trigger" className="sidebar-trigger__button">
+                        <span className="sidebar-trigger__button--menu"><Icon.Menu /></span>
+                        <span className="sidebar-trigger__button--x"><Icon.X /></span>
                     </label>
                     <aside className="AdminSidebar">
                         <nav className="AdminSidebar__nav">
+                            <Link to="/">Home</Link>
+                            <h2>Content</h2>
                             <ul>
-                                <li><Link to="/archetypes">Archetypes</Link></li>
-                                <ul>
-                                    { archetypes }
-                                </ul>
+                                { archetypes }
                             </ul>
                         </nav>
                     </aside>

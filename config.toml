@@ -2,22 +2,15 @@ baseURL = "https://jacklgreenberg.com"
 languageCode = "en-us"
 title = "Jack Greenberg"
 
-# ignoreFiles = [ "\\.xcf$" ]
-
 [params]
   subtitle = "Electrical and Firmware Engineer"
 
 [markup]
     [markup.highlight]
-      codeFences = true
-      guessSyntax = false
-      hl_Lines = ""
-      lineNoStart = 1
       lineNos = true
       lineNumbersInTable = true
       noClasses = true
       style = "paraiso-dark"
-      tabWidth = 4
     [markup.goldmark]
       [markup.goldmark.extensions]
         footnote = true
