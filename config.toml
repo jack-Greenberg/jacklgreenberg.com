@@ -13,8 +13,7 @@ title = "Jack Greenberg"
       lineNoStart = 1
       lineNos = true
       lineNumbersInTable = true
-      noClasses = true
-      style = "paraiso-dark"
+      noClasses = false
       tabWidth = 4
     [markup.goldmark]
       [markup.goldmark.extensions]

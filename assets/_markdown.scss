@@ -27,6 +27,16 @@
         @include h3-like;
         margin: 1em 0 .6em;
     }
+    h4 {
+        @include h3-like;
+        font-size: 1.1em;
+        margin: 1em 0 .6em;
+    }
+    h5 {
+        @include h3-like;
+        font-size: 1.05em;
+        margin: 1em 0 .6em;
+    }
     p {
         @include paragraph-like;
         width: 100%;
@@ -95,26 +105,35 @@
     }
 
     // Code block
-    .highlight > div {
+    .highlight {
+        position: relative;
+        margin: 3em 0 2em;
+    }
+    .highlight div.chroma {
         border-radius: 5px;
+        position: static;
+        overflow-x: scroll;
 
         table {
             font-size: 1em;
             padding: .5em !important;
-            position: relative;
-            background-color: unset !important;
-            display: block;
             margin: 0;
+            border: 0;
 
             pre {
-                position: relative;
-
+                &:not([class^=language-]) {
+                    margin-right: 1em;
+                }
                 [class^=language-]::after {
+                    // Programming language label
                     content: attr(data-lang);
+                    padding: .1em .3em;
                     position: absolute;
-                    top: 0;
+                    bottom: 100%;
                     right: 0;
+                    margin-left: 1em;
                     color: #999;
+                    background-color: #444;
                 }
             }
             td {
@@ -136,8 +155,10 @@
         margin: 1em auto 1em;
 
         th, td {
-            border: 1px solid #999;
-            padding: .5em;
+            &:not([class="lntd"]) {
+                border: 1px solid #999;
+                padding: .5em;
+            }
         }
         td {
             font-size: .8em;
@@ -176,6 +197,18 @@
             width: 100%;
             display: block;
             text-align: center;
+        }
+    }
+
+    // Used for rendering MathTeX images
+    figure.math {
+        width: unset;
+
+        img {
+            filter: invert(1);
+            width: unset;
+            transform: scale(1.5);
+            box-sizing: initial;
         }
     }
 
