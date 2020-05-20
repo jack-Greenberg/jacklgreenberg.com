@@ -1,18 +1,20 @@
 {{ define "main" }}
-<div class="Page">
-    {{ partial "header" . }}
-    <div class="footer__wrapper">
-        <a href="/projects" class="backlink">&lt; Back to projects</a>
-        <main class="Content">
-            <h1>
-                {{ .Title }}
-                <img class="project-image" src="{{ .Params.image }}" />
-            </h1>
+<div class="canvas">
+    <div class="Page">
+        {{ partial "header" . }}
+        <div class="footer__wrapper">
+            <a href="/projects" class="backlink">&lt; Back to projects</a>
+            <main class="Content">
+                <h1>
+                    {{ .Title }}
+                    <img class="project-image" src="{{ .Params.image }}" />
+                </h1>
 
-            <!-- Markdown -->
-            {{ .Content }}
-        </main>
-        {{ partial "footer" . }}
+                <!-- Markdown -->
+                {{ .Content }}
+            </main>
+            {{ partial "footer" . }}
+        </div>
     </div>
 </div>
 {{ end }}

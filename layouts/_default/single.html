@@ -1,16 +1,18 @@
 {{ define "main" }}
-<div class="Page">
-    {{ partial "header" . }}
-    <div class="footer__wrapper">
-        <main class="Content">
-            <h1>
-                {{ .Title }}
-            </h1>
+<div class="canvas">
+    <div class="Page">
+        {{ partial "header" . }}
+        <div class="footer__wrapper">
+            <main class="Content">
+                <h1>
+                    {{ .Title }}
+                </h1>
 
-            <!-- Markdown -->
-            {{ .Content }}
-        </main>
-        {{ partial "footer" . }}
+                <!-- Markdown -->
+                {{ .Content }}
+            </main>
+            {{ partial "footer" . }}
+        </div>
     </div>
 </div>
 {{ end }}
