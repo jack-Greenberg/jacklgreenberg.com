@@ -5,5 +5,6 @@
     "draft": "{{ .Params.Draft }}",
     "featured": "{{ .Params.Featured }}",
     "image": "{{ .Params.Image }}",
-    "permalink" : "{{ .Permalink }}"
+    "permalink" : "{{ .Permalink }}",
+    "content" : "{{ .Content }}"
 }
