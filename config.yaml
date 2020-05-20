@@ -20,7 +20,3 @@ markup:
   goldmark:
     extensions:
       footnote: true
-
-outputs:
-  page:
-    - json
