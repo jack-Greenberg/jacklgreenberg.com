@@ -11,28 +11,6 @@ featured: false
 
 Jack Greenberg
 
-<details>
-    <summary style="font-weight: bold;">Table of Contents</summary>
-    <ul>
-        <li><a href="#the-hero">The Hero</a></li>
-        <ul>
-            <li><a href="#the-challenge">The Challenge</a></li>
-            <li><a href="#the-world">The World</a></li>
-        </ul>
-        <li><a href="#some-graphs">Some Graphs</a></li>
-        <li><a href="#some-code">Some Code</a></li>
-        <ul>
-            <li><a href="#ransac">RANSAC</a></li>
-            <ul>
-                <li><a href="#fitting-lines">Fitting Lines</a></li>
-                <li><a href="#fitting-circles">Fitting Circles</a></li>
-            </ul>
-            <li><a href="#generating-vector-fields">Generating Vector Fields</a></li>
-            <li><a href="#gradient-descent">Gradient Descent</a></li>
-        </ul>
-    </ul>
-</details>
-
 <a href="https://youtu.be/NQd-fZsqmDU">Click here to watch the final video.</a>
 
 ### The Challenge
