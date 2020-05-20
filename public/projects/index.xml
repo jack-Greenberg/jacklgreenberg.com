@@ -2,40 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Jack Greenberg</title>
-    <link>http://example.org/projects/</link>
+    <link>https://jacklgreenberg.com/projects/</link>
     <description>Recent content in Projects on Jack Greenberg</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 May 2020 20:43:04 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2020 15:55:50 -0700</lastBuildDate>
     
-	<atom:link href="http://example.org/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacklgreenberg.com/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Tools Olin Edu</title>
+      <link>https://jacklgreenberg.com/projects/tools-olin-edu/index.json</link>
+      <pubDate>Thu, 14 May 2020 15:55:50 -0700</pubDate>
+      
+      <guid>https://jacklgreenberg.com/projects/tools-olin-edu/index.json</guid>
+      <description>&lt;p&gt;Summary paragraph will go here&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NEATO Gauntlet</title>
+      <link>https://jacklgreenberg.com/projects/neato-gauntlet/index.json</link>
+      <pubDate>Wed, 13 May 2020 20:20:30 -0700</pubDate>
+      
+      <guid>https://jacklgreenberg.com/projects/neato-gauntlet/index.json</guid>
+      <description>QEA presents NEATO: The Gauntlet Jack Greenberg
+Click here to watch the final video.The Challenge The objective of this task is to get the NEATO to navigate a playpen&amp;ndash;&amp;ldquo;The Gauntlet&amp;rdquo;&amp;ndash;until it reaches the &amp;ldquo;Barrel of Benevolence&amp;rdquo; (a cylinder), while avoiding boxes. The NEATO will utilize its LIDAR scanner to process its surroundings with a RANSAC algorithm to generate a potential field and perform a gradient descent path-finding method.
+The Hero The NEATO is a differential drive, two-wheeled robot that was simulated using a series group of docker containers, and interfaced with using the ROS (Robotic Operating System).</description>
+    </item>
+    
+    <item>
       <title>I2C2</title>
-      <link>http://example.org/projects/i2c2/</link>
+      <link>https://jacklgreenberg.com/projects/i2c2/index.json</link>
       <pubDate>Mon, 11 May 2020 20:43:04 -0700</pubDate>
       
-      <guid>http://example.org/projects/i2c2/</guid>
+      <guid>https://jacklgreenberg.com/projects/i2c2/index.json</guid>
       <description>&lt;p&gt;I wrote an implementation of the I2C protocol (inter-integrated chip) in C. The project was partly for my Software Systems class, and partly for the Olin Electric Motorsports team.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Shutdown Sense</title>
-      <link>http://example.org/projects/shutdown-sense/</link>
+      <title>Shutdown Sense Circuit</title>
+      <link>https://jacklgreenberg.com/projects/shutdown-sense/index.json</link>
       <pubDate>Mon, 11 May 2020 18:20:40 -0700</pubDate>
       
-      <guid>http://example.org/projects/shutdown-sense/</guid>
+      <guid>https://jacklgreenberg.com/projects/shutdown-sense/index.json</guid>
       <description>&lt;p&gt;Summary paragraph will go here&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>BSPD Brakelight Circuit</title>
-      <link>http://example.org/projects/bspd-brakelight-circuit/</link>
+      <link>https://jacklgreenberg.com/projects/bspd-brakelight/index.json</link>
       <pubDate>Mon, 11 May 2020 18:20:30 -0700</pubDate>
       
-      <guid>http://example.org/projects/bspd-brakelight-circuit/</guid>
-      <description>&lt;p&gt;Summary paragraph will go here&amp;hellip;&lt;/p&gt;</description>
+      <guid>https://jacklgreenberg.com/projects/bspd-brakelight/index.json</guid>
+      <description></description>
     </item>
     
   </channel>
