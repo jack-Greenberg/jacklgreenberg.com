@@ -1,24 +1,3 @@
-.nav-trigger {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    cursor: pointer;
-    font-size: 1.25rem;
-    font-family: $mono;
-    color: $main;
-
-    @media only screen and (min-width: 700px) {
-        display: none;
-        position: relative;
-        top: unset;
-        right: unset;
-    }
-
-    & + input {
-        display: none;
-    }
-}
-
 .nav {
     display: none;
     position: fixed;
@@ -28,8 +7,11 @@
     margin: 0 auto;
     background-color: $bg;
     z-index: 9;
+    text-align: center;
 
     @media only screen and (min-width: 700px) {
+        font-size: 1.2em;
+        text-align: left;
         display: block;
         position: unset;
         width: unset;
@@ -38,6 +20,8 @@
         margin: unset;
         grid-area: nav;
     }
+
+    // When the nav trigger is "checked" (toggled), the nav menu should be shown
     .nav-trigger + input:checked + & {
         display: block;
 
@@ -61,32 +45,22 @@
             }
         }
     }
-    @media only screen and (min-width: 700px) {
-        .main-flex & {
-            font-size: 1.1em;
-            align-self: center;
-            margin-top: calc(#{map-get($image-size, large)} + 2rem); // The 1rem comes from the top margin of .banner
-            padding-left: 2em;
-        }
-    }
-    .nav-overlay {
-        display: none;
-    }
     &__list {
+        font-size: .9em;
         list-style-type: none;
         text-align: center;
         margin-top: 35vh;
         z-index: 2;
         position: relative;
+        display: inline-block;
 
         @media only screen and (min-width: 700px) {
-            font-size: .7em;
             margin-top: 0;
             text-align: left;
         }
 
         &__link {
-            font-size: 1em;
+            font-size: .7em;
             font-family: $mono;
             color: $main;
 
@@ -95,19 +69,33 @@
             }
 
             a {
-                color: inherit;
-                text-decoration: none;
-
-                &:hover {
-                    color: $accent;
-                }
-                &::before {
-                    content: '[ ';
-                }
-                &::after {
-                    content: ' ]';
-                }
+                @include a;
             }
         }
+    }
+}
+
+.nav-overlay {
+    display: none;
+}
+
+.nav-trigger {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-family: $mono;
+    color: $main;
+
+    @media only screen and (min-width: 700px) {
+        display: none;
+        position: relative;
+        top: unset;
+        right: unset;
+    }
+
+    & + input {
+        display: none;
     }
 }
