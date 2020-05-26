@@ -6,64 +6,36 @@
     <description>Recent content on Jack Greenberg</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 May 2020 15:55:50 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2020 20:43:04 -0700</lastBuildDate>
     
 	<atom:link href="https://jacklgreenberg.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Tools Olin Edu</title>
-      <link>https://jacklgreenberg.com/projects/tools-olin-edu/index.json</link>
-      <pubDate>Thu, 14 May 2020 15:55:50 -0700</pubDate>
-      
-      <guid>https://jacklgreenberg.com/projects/tools-olin-edu/index.json</guid>
-      <description>&lt;p&gt;Summary paragraph will go here&amp;hellip;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>NEATO Gauntlet</title>
-      <link>https://jacklgreenberg.com/projects/neato-gauntlet/index.json</link>
-      <pubDate>Wed, 13 May 2020 20:20:30 -0700</pubDate>
-      
-      <guid>https://jacklgreenberg.com/projects/neato-gauntlet/index.json</guid>
-      <description>QEA presents NEATO: The Gauntlet Jack Greenberg
-Click here to watch the final video.The Challenge The objective of this task is to get the NEATO to navigate a playpen&amp;ndash;&amp;ldquo;The Gauntlet&amp;rdquo;&amp;ndash;until it reaches the &amp;ldquo;Barrel of Benevolence&amp;rdquo; (a cylinder), while avoiding boxes. The NEATO will utilize its LIDAR scanner to process its surroundings with a RANSAC algorithm to generate a potential field and perform a gradient descent path-finding method.
-The Hero The NEATO is a differential drive, two-wheeled robot that was simulated using a series group of docker containers, and interfaced with using the ROS (Robotic Operating System).</description>
-    </item>
-    
-    <item>
       <title>I2C2</title>
-      <link>https://jacklgreenberg.com/projects/i2c2/index.json</link>
+      <link>https://jacklgreenberg.com/projects/i2c2/</link>
       <pubDate>Mon, 11 May 2020 20:43:04 -0700</pubDate>
       
-      <guid>https://jacklgreenberg.com/projects/i2c2/index.json</guid>
-      <description>&lt;p&gt;I wrote an implementation of the I2C protocol (inter-integrated chip) in C. The project was partly for my Software Systems class, and partly for the Olin Electric Motorsports team.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Shutdown Sense Circuit</title>
-      <link>https://jacklgreenberg.com/projects/shutdown-sense/index.json</link>
-      <pubDate>Mon, 11 May 2020 18:20:40 -0700</pubDate>
-      
-      <guid>https://jacklgreenberg.com/projects/shutdown-sense/index.json</guid>
-      <description>&lt;p&gt;Summary paragraph will go here&amp;hellip;&lt;/p&gt;</description>
+      <guid>https://jacklgreenberg.com/projects/i2c2/</guid>
+      <description>&lt;p&gt;I wrote an implementation of the I2C protocol (inter-integrated chip) in C. I learned a lot about writing and debugging embedded firmware.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>BSPD Brakelight Circuit</title>
-      <link>https://jacklgreenberg.com/projects/bspd-brakelight/index.json</link>
+      <link>https://jacklgreenberg.com/projects/bspd-brakelight/</link>
       <pubDate>Mon, 11 May 2020 18:20:30 -0700</pubDate>
       
-      <guid>https://jacklgreenberg.com/projects/bspd-brakelight/index.json</guid>
-      <description></description>
+      <guid>https://jacklgreenberg.com/projects/bspd-brakelight/</guid>
+      <description>My first project for Olin Electric Motorsports was redesigning the mission-critical brake system plausibility device. The analog circuit controls one node of the shutdown circuit on the car, helping to ensure the safety of the driver and vehicle.
+How to PCB The final deliverable for this project was a PCB, or printed circuit board, which would slot into the car&amp;rsquo;s low voltage box. Along with performing a critical safety check for the electrical systems during racing, the circuit also handles the brakelight by reading an analog signal from a brake pressure sensor.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://jacklgreenberg.com/about/index.json</link>
+      <link>https://jacklgreenberg.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jacklgreenberg.com/about/index.json</guid>
+      <guid>https://jacklgreenberg.com/about/</guid>
       <description>Hi there! My name is Jack Greenberg. I am an engineering student at Olin College of Arts and Crafts Engineering, studying electrical and computer engineering. My passions lie in firmware/embedded systems and electrical design, and I also am quite fond of web development.
 At Olin I am an electrical design lead for the Formula SAE team, Olin Electric Motorsports, and I am working for the machine shop to build a brand new website to manage machine trainings.</description>
     </item>
