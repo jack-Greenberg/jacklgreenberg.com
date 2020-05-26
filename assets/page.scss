@@ -4,6 +4,8 @@
     position: relative;
     min-height: 100vh;
     padding-bottom: 2rem; // This is to make sure the footer has enough room on the bottom to not overlap text
+    position: relative;
+    z-index: 2;
 
     @media only screen and (min-width: 375px) {
         font-size: 1.1em;
@@ -88,4 +90,12 @@
             }
         }
     }
+}
+
+.draft-label {
+    @include paragraph-like;
+    font-size: .8em;
+    border: 1px solid $fg;
+    padding: .2em .4em;
+    vertical-align: middle;
 }

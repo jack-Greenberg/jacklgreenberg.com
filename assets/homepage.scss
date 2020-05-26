@@ -105,7 +105,7 @@
         justify-content: center;
 
         .nav {
-            font-size: 1.1em;
+            font-size: 1.25em;
             align-self: center;
             margin-top: calc(#{map-get($image-size, large)} + 2rem); // The 2rem comes from the top margin of .banner
             padding-left: 2em;
