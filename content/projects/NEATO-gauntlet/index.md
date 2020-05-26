@@ -3,69 +3,13 @@ title: "NEATO Gauntlet"
 date: 2020-05-13T20:20:30-07:00
 year: 2020
 image: "images/gauntlet-contour.svg"
-draft: false
+draft: true
 featured: false
 ---
 
 ## QEA presents NEATO: The Gauntlet
 
-Jack Greenberg
-
-<a href="https://youtu.be/NQd-fZsqmDU">Click here to watch the final video.</a>
-
-### The Challenge
-
-The objective of this task is to get the NEATO to navigate a playpen--"The Gauntlet"--until it reaches the "Barrel of Benevolence" (a cylinder), while avoiding boxes. The NEATO will utilize its LIDAR scanner to process its surroundings with a RANSAC algorithm to generate a potential field and perform a gradient descent path-finding method.
-
-#### The Hero
-
-<p align="center"><img src="graphics/neato-blank.png" width="50%" /></p>
-
-The NEATO is a differential drive, two-wheeled robot that was simulated using a series group of docker containers, and interfaced with using the ROS (Robotic Operating System). This project uses MATLAB's ROS toolbox.
-
-#### The World
-
-<p align="center"><img src="graphics/gauntlet.png" width="50%" /></p>
-
-
-
-### Some Graphs
-
-<p align="center"><img src="graphics/pen-map.png" /></p>
-
-<p align="center">Map of the Gauntlet as seen by the NEATO's LIDAR scanner, with features detected by the RANSAC algorithm.</p>
-
-
-
-<p align="center"><img src="graphics/contour-map.png" /></p>
-
-<p align="center">Gauntlet map with contour lines shown.</p>
-
-
-
-<p align="center"><img src="graphics/vector-map.png" /></p>
-
-<p align="center">Gauntlet map with vector field shown.</p>
-
-
-
-<p align="center"><img src="graphics/planned-path.png" /></p>
-
-<p align="center">Planned path of the NEATO at the beginning. This will update as the NEATO progesses forward and generates new LIDAR scans.</p>
-
-
-
-<p align="center"><img src="graphics/NEATO-path.png" /></p>
-
-<p align="center">Final path of the NEATO.</p>
-
-
-
-<p align="center"><img src="graphics/composite-plot.png" /></p>
-
-<p align="center">Final composite map of the Gauntlet in the global frame (NEATO's odometry frame, with origin at (0,0) and x and y axes.</p>
-
-
+[Final Video](https://youtu.be/NQd-fZsqmDU)
 
 ### The Code
 
@@ -150,9 +94,9 @@ In theory, if a set of data points fit a model, then any subset of those points 
 
 Now that I had a set of boundaries and a goal from our dataset, I needed a way to generate a map that the NEATO can follow. For this challenge, I implemented a vector field/gradient descent algorithm to have the NEATO navigate the gauntlet. To generate the map, I used the equation:
 
-{{<figure
+{{<math
     class="math"
-    src="https://render.githubusercontent.com/render/math?math=z = ln \sqrt{(x-x_n)^{2}%2b(y-y_n)^{2}}"
+    content="z = ln \sqrt{(x-x_n)^{2}+(y-y_n)^{2}}"
 >}}
 
 I added multiple of these terms together to generate a composite map of the NEATO's surroundings. If the term is *positive*, then we get a "sink", and if the term is *negative* we get a "source". When it comes time for the NEATO to choose a path with gradient descent, it will be attraced to the sinks and repelled from the sources.
@@ -183,9 +127,9 @@ After I generated the equation, it was time to get the NEATO to actually move. I
 
 The equation to calculate the next point is:
 
-{{< figure
+{{< math
     class="math"
-    src="https://render.githubusercontent.com/render/math?math=r_{n%2b1} = r_{n} - \lambda_{n} \cdot \nabla V"
+    content="r_{n+1} = r_{n} - \lambda_{n} \cdot \nabla V"
 >}}
 
 where <img src="https://render.githubusercontent.com/render/math?math=\lambda_{n}"> is a scalar and determined by <img src="https://render.githubusercontent.com/render/math?math=\lambda_{n%2b1} = \delta \lambda_{n}"> and <img src="https://render.githubusercontent.com/render/math?math=\delta"> is some scalar. The code to make the NEATO rotate is as follows:
