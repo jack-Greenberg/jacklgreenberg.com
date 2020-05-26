@@ -1,3 +1,7 @@
+{{ define "title" }}
+    {{ .Site.Title }} | Projects
+{{ end }}
+
 {{ define "main" }}
 <div class="canvas">
     <div class="Page">
@@ -31,7 +35,7 @@
                         <h3 class="List__title">{{ .Key }}</h3>
                         <ul class="List__element">
                             {{ range .Pages.ByTitle }}
-                            <li class="List__item"><a href="{{ .Permalink | relURL }}">{{ .Title }}</a></li>
+                            <li class="List__item"><a href="{{ .Permalink | relURL }}">{{ .Title }}</a> {{ if .Params.draft }}<span class="draft-label">Draft</span>{{ end }}</li>
                             {{ end }}
                         </ul>
                     </div>
