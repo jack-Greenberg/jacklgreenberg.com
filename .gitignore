@@ -5,3 +5,4 @@ dist/
 design/
 .ftpconfig
 .atom-build.json
+public/
