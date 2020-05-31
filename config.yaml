@@ -24,3 +24,4 @@ markup:
 outputs:
   page:
     - json
+    - html
