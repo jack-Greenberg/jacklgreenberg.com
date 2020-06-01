@@ -6,5 +6,5 @@
     "featured": "{{ .Params.Featured }}",
     "image": "{{ .Params.Image }}",
     "permalink" : "{{ .Permalink }}",
-    "content" : "{{ .Content }}"
+    "content" : {{ .RawContent | jsonify }}
 }
