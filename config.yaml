@@ -16,6 +16,7 @@ markup:
     lineNos: true
     lineNumbersInTable: true
     noClasses: false
+    style: dracula
     tabWidth: 4
   goldmark:
     extensions:

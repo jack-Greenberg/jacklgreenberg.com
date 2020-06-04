@@ -16,4 +16,4 @@ After a few months in Berlin, I moved back home to L.A. and got a job at Yay Bri
 
 Please drop me a line! I’d love to chat:
 
-[jgreenberg (at) olin (dot) edu](mailto:jgreenberg@olin.edu)
+[j (at) jacklgreenberg (dot) com](mailto:j@jacklgreenberg.com)

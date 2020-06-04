@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>{{ block "title" . }}
-            
+
         {{ end }}</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@
         {{ $styles := resources.Get "index.scss" | toCSS | minify | fingerprint }}
         {{ $style := $styles | resources.ToCSS }}
 
-        <link rel="stylesheet" href="{{ $style.Permalink }}">
+        <link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
     </head>
 
     <body>

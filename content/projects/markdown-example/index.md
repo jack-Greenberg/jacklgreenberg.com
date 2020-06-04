@@ -47,6 +47,6 @@ A value|Another value
 ## Another H2
 
 {{<
-    figure src="images/200_new_look.png"
+    figure src="https://http.cat/200.jpg"
     caption="Image caption (Source: [Website Name](https://www.example.com))"
 >}}

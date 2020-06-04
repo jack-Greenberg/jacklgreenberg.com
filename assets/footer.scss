@@ -13,17 +13,18 @@
 
         li {
             font-size: .8em;
-            color: $main;
+            color: $fg;
             font-family: $mono;
 
             &:not(:first-child)::before {
                 content: '/';
-                color: $fg;
+                color: $accent;
                 margin: 0 .5em;
             }
             a {
                 color: inherit;
                 text-decoration: none;
+                transition: color .2s;
 
                 &:hover {
                     color: $accent;

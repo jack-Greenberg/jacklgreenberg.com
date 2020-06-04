@@ -90,6 +90,16 @@
             color: $fg;
             width: 80%;
 
+            a {
+                color: $accent;
+                transition: color .2s, background-color .2s;
+                padding: .2em .3em;
+
+                &:hover {
+                    background-color: rgba(#172a45, .7);
+                }
+            }
+
             @media only screen and (min-width: 700px) {
                 font-size: .6em;
                 max-width: 30em;

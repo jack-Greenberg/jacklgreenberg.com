@@ -70,6 +70,16 @@
 
             a {
                 @include a;
+                transition: color .2s;
+
+                // &::before {
+                //     content: '[ ';
+                //     color: $accent;
+                // }
+                // &::after {
+                //     content: ' ]';
+                //     color: $accent;
+                // }
             }
         }
     }
