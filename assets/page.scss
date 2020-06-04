@@ -57,6 +57,7 @@
             color: $accent;
             transition: background-color .2s;
             padding: .2em 0em;
+            margin: -.2em 0;
 
             &:hover {
                 // color: lighten($accent, 15%);

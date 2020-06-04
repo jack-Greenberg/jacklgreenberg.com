@@ -47,6 +47,7 @@
             color: $accent;
             transition: color .2s, background-color .2s;
             padding: .2em .3em;
+            margin: -.2em -.3em;
 
             &:hover {
                 color: lighten($accent, 15%);
@@ -54,12 +55,11 @@
             }
         }
         code {
-            border: 1px solid $accent;
             font-size: 1.1em;
             border-radius: 3px;
-            padding: 1px 2px;
+            padding: 2px 4px;
             color: $accent;
-            background-color: #0d203c;
+            background-color: lighten($bg, 10%);
             box-decoration-break: clone;
             -webkit-box-decoration-break: clone;
         }
