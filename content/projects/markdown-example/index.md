@@ -1,7 +1,7 @@
 ---
 title: "Markdown Example"
 date: 2020-05-18T15:44:32-07:00
-year:
+year: 2019
 draft: true
 featured: false
 ---

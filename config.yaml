@@ -26,3 +26,7 @@ outputs:
   page:
     - json
     - html
+
+privacy:
+  youtube:
+    privacyenhanced: true
