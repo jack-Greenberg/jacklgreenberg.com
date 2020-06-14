@@ -7,8 +7,6 @@ draft: true
 featured: false
 ---
 
-Summary paragraph will go here...
+The shutdown sense board is a circuit board on the [Olin Electric Motorsports](https://www.olinelectricmotorsports.com) Mark V car. It provides a helpful diagnostic interface for debugging the shutdown circuit to see why the car is no longer running.
 
-<!--more-->
-
-Test
+## The Shutdown Circuit
