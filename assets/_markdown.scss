@@ -77,12 +77,13 @@
         }
     }
     a.footnote-ref, a.footnote-backref {
-        padding-left: 3px;
+        padding: 0 0 0 3px;
         text-decoration: none;
+        margin: unset;
 
         &:hover {
             text-decoration: underline;
-            background-color: $bg;
+            background-color: inherit;
             color: $accent;
         }
     }
