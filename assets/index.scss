@@ -6,7 +6,6 @@
 
 @import 'page';
 @import 'homepage';
-@import 'about';
 
 @import 'nav';
 @import 'page';
@@ -18,4 +17,8 @@
     background-color: $bg; // Set background color to dark
     min-height: 100vh; // Make sure the background takes up at least the entire viewport
     position: relative; // Set relative position to align the footer to at least the bottom
+}
+
+body {
+    background-color: $bg;
 }

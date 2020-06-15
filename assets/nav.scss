@@ -46,7 +46,7 @@
         }
     }
     &__list {
-        font-size: .9em;
+        font-size: 1.5em;
         list-style-type: none;
         text-align: center;
         margin-top: 35vh;
@@ -57,6 +57,7 @@
         @media only screen and (min-width: 700px) {
             margin-top: 0;
             text-align: left;
+            font-size: .9em;
         }
 
         &__link {
