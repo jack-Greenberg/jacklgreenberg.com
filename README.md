@@ -1,18 +1,5 @@
-# My Personal Website
+# jacklgreenberg dot com
 
-## Things to include
-* Images
-* Resume
-* Projects
-* Links
-* Formula
-* Music
+This is my personal website. Built with Hugo. [Enjoy.](https://jacklgreenberg.com)
 
-## Projects
-* I2C2
-* Tools.Olin
-* CMS
-* ModSim project?
-* BSPD
-* Shutdown Sense
- 
+Eventually I will clean things up and remove unnecessary files.
