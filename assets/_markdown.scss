@@ -229,7 +229,8 @@
         display: block;
 
         img {
-            width: 80%;
+            max-width: 80%;
+            max-height: 25em;
             margin-bottom: .5em;
         }
         figcaption > p {
